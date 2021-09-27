@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q819</title>
+</head>
+
+<body>
+    <form action="/thanks.php" method="post">
+        <div>
+            <label for="lastName">Nom :</label>
+            <input type="text" id="lastName" name="lastName" required>
+        </div>
+        <div>
+            <label for="firstName">Prénom :</label>
+            <input type="text" id="firstName" name="firstName" required>
+        </div>
+        <div>
+            <label for="courriel">Courriel :</label>
+            <input type="email" id="courriel" name="email" required>
+        </div>
+        <div>
+            <label for="phone">Téléphone :</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+        </div>
+        <div>
+            <label for="subject">Sujet :</label>
+            <select name="subject" id="subject" required>
+                    <option value="">--Choisissez un sujet--</option>
+                    <option value="subject1">Sujet 1</option>
+                    <option value="subject2">Sujet 2</option>
+                    <option value="subject3">Sujet 3</option>
+                    <option value="subject4">Sujet 4</option>
+                    <option value="subject5">Sujet 5</option>
+                </select>
+        </div>
+        <div>
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" required></textarea>
+        </div>
+        <div class="button">
+            <button type="submit">Envoyer votre message</button>
+        </div>
+    </form>
+</body>
+
+</html>
